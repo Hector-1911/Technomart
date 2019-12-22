@@ -1,0 +1,133 @@
+/*Base style*/
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Cuprum', Arial, sans-serif;
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/*Header*/
+
+.main-header {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.main-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-top-panel {
+    width: 100%;
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 130px;
+
+    background-color: #293449;
+
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.top-panel-menu {
+    display: flex;
+}
+
+.main-header .top-panel-logo {
+    height: 100%;
+
+    padding: 13px 55px;
+    padding-bottom: 7px;
+
+    background-color: #ee3643;
+    box-shadow: 0 5px 0 0 #b52933;
+
+    font-size: 24px;
+    line-height: 21px;
+}
+
+.top-panel-search {
+    width: 100%;
+
+    padding-left: 49px;
+    padding-right: 20px;
+}
+
+.menu-item-search {
+    width: 270px;
+}
+
+.top-panel-bookmarks {
+    padding-left: 44px;
+    padding-right: 30px;
+}
+
+.top-panel-basket {
+    padding-left: 44px;
+    padding-right: 30px;
+}
+
+.top-panel-checkout {
+    padding: 0 20px;
+
+    background-color: #63a63e;
+}
+
+.top-panel-link {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
