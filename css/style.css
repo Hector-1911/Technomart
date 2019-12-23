@@ -147,6 +147,8 @@ body {
 
     background-color: #f3f7f8;
     color: #32425c;
+
+    padding-bottom: 65px;
 }
 
 .middle-panel-container {
@@ -248,7 +250,35 @@ body {
     width: 100%;
 }
 
+/* Middle-panel-navigation */
 
+.middle-panel-navigation {
+    max-width: 960px;
+    width: 100%;
+
+    padding: 0 10px;
+    margin: 0 auto;
+
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.main-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: #32425c;
+    box-shadow: 0 5px 0 0 #293449;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item-link {
+    padding: 20px 30px;
+}
 
 
 
