@@ -1,4 +1,4 @@
-/*Base style*/
+/* Base style */
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -40,8 +40,19 @@ a {
     color: #fff;
 }
 
-ul {
+ul,
+li {
     list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
 }
 
 body {
@@ -55,27 +66,13 @@ body {
     font-weight: 400;
 }
 
-/*Header*/
+/* Header */
 
-.main-header {
-    max-width: 1200px;
-    width: 100%;
-
-    margin: 0 auto;
-}
-
-.main-header ul {
-    margin: 0;
-    padding: 0;
-}
+/* Top panel*/
 
 .header-top-panel {
     width: 100%;
     min-height: 42px;
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0 130px;
 
     background-color: #293449;
 
@@ -83,11 +80,22 @@ body {
     line-height: 18px;
 }
 
+.header-top-container {
+    max-width: 960px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .top-panel-menu {
     display: flex;
 }
 
-.main-header .top-panel-logo {
+.header-top-panel .top-panel-logo {
     height: 100%;
 
     padding: 13px 55px;
@@ -131,3 +139,122 @@ body {
     padding-top: 13px;
     padding-bottom: 13px;
 }
+
+/* Middle panel */
+
+.header-middle-panel {
+    width: 100%;
+
+    background-color: #f3f7f8;
+    color: #32425c;
+}
+
+.middle-panel-container {
+    max-width: 960px;
+    width: 100%;
+
+    padding: 45px 10px 40px 10px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-info-container {
+    max-width: 300px;
+    width: 100%;
+
+    padding: 0 50px 0 51px;
+}
+
+.middle-panel-info {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+
+    margin: 0;
+}
+
+.middle-panel-contacts {
+    max-width: 300px;
+    width: 100%;
+
+    padding-right: 30px;
+}
+
+.panel-contacts-phone {
+    max-width: 270px;
+    width: 100%;
+
+    display: block;
+
+    border: 3px solid #ffffff;
+    color: #ee3643;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+
+    padding: 7px 49px 7px 71px;
+}
+
+.panel-contacts-location {
+    display: block;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+    font-weight: 400;
+    text-align: center;
+
+    margin: 0;
+    margin-top: 5px;
+}
+
+.middle-panel-login {
+    max-width: 300px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 18px;
+}
+
+.panel-login-btn {
+    max-height: 45px;
+    height: 100%;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+
+.panel-login-in {
+    max-width: 120px;
+    width: 100%;
+
+    padding-left: 31px;
+}
+
+.panel-login-reg {
+    max-width: 150px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
