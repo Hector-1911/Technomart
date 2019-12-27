@@ -40,6 +40,25 @@ a {
     color: #fff;
 }
 
+.button {
+    color: #ffffff;
+    background-color: #ee3643;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ul,
 li {
     list-style: none;
@@ -300,17 +319,20 @@ body {
 
 /* Features */
 
+.features-container {
+    margin-bottom: 53px;
+}
+
 .features {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .features-item {
     max-width: 300px;
-    max-height: 123px;
     width: 100%;
-    height: 100%;
 
     padding: 19px 24px;
     margin-bottom: 20px;
@@ -318,7 +340,6 @@ body {
 
 .features-item-slider {
     max-width: 620px;
-/*    max-height: 266px;*/
     width: 100%;
     height: 266px;
 
@@ -326,6 +347,11 @@ body {
     margin-bottom: 20px;
 
     background-color: black;
+}
+
+.features-item-container {
+    max-width: 300px;
+    width: 100%;
 }
 
 .features-fon-1 {
@@ -367,13 +393,48 @@ body {
     vertical-align: middle;
 
     color: #ffffff;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 
     padding: 10px 24px;
-
-    opacity: 0.1;
 }
+
+/* Popular products */
+
+.popular-products {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 26px 30px;
+    margin-bottom: 20px;
+
+    background-color: #f9f5f0;
+}
+
+.popular-products-title {
+    align-self: center;
+
+    color: #32425c;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popular-products-btn {
+    max-width: 253px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
