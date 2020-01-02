@@ -411,6 +411,10 @@ body {
     background-color: #f9f5f0;
 }
 
+.popular-products-container {
+    margin-bottom: 20px;
+}
+
 .popular-products-title {
     align-self: center;
 
@@ -498,8 +502,72 @@ body {
     margin-bottom: 20px;
 }
 
+/* Popular-producers */
 
+.popular-producers {
+    display: flex;
+    justify-content: space-between;
 
+    padding: 26px 30px;
+    margin-bottom: 20px;
+
+    background-color: #f9f5f0;
+}
+
+.popular-producers-title {
+    align-self: center;
+
+    color: #32425c;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popular-producers-btn {
+    max-width: 253px;
+    width: 100%;
+}
+
+.popular-producers-container {
+    margin-bottom: 65px;
+}
+
+.popular-producers-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.popular-producers-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 220px;
+    width: 100%;
+    height: 145px;
+
+    border: 1px solid rgba(0,0,0,0.1);
+
+    margin-bottom: 20px;
+}
+
+.producers-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #ffffff;
+}
+
+.interskol-img {
+    margin-top: -10px;
+}
 
 
 
