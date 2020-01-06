@@ -608,7 +608,52 @@ body {
 }
 
 .services-content {
+    display: flex;
+
     width: 100%;
+}
+
+.services-slider-menu {
+    max-width: 240px;
+    width: 100%;
+}
+
+.services-slider-item {
+    padding: 15px 22px;
+
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #32425c;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.services-slider-content-container {
+    margin-left: 80px;
+}
+
+.services-slider-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase;
+
+    margin-bottom: 24px;
+}
+
+.services-slider-description {
+    max-width: 280px;
+    width: 100%;
+
+    margin: 0;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
 }
 
 
