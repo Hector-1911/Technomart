@@ -656,6 +656,89 @@ body {
     color: #000000;
 }
 
+/* About-US */
+
+.about-us-container {
+    width: 100%;
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.about-us {
+    max-width: 960px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 80px 10px 85px 10px;
+}
+
+.about-us-info {
+    max-width: 520px;
+    width: 100%;
+}
+
+.about-us-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-bottom: 30px;
+}
+
+.about-us-desc {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.about-us-info-menu {
+    margin-bottom: 35px;
+}
+
+.about-us-info-item {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+
+.about-us-info-button {
+    max-width: 220px;
+    width: 100%;
+}
+
+.about-us-contacts {
+    max-width: 300px;
+    width: 100%;
+}
+
+.about-us-map {
+    margin-top: 32px;
+    margin-bottom: 35px;
+}
+
+.about-us-contacts-button {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+
+
 
 
 
