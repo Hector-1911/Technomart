@@ -736,6 +736,102 @@ body {
     width: 100%;
 }
 
+/* Footer */
+
+.footer-top-panel-container {
+    background-color: #32425c;
+    color: #ffffff;
+}
+
+.footer-bottom-panel-container {
+    background-color: #293449;
+    color: #ffffff;
+}
+
+.footer-top-panel {
+    max-width: 960px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 0 10px;
+    padding-bottom: 50px;
+}
+
+.footer-bottom-panel {
+    max-width: 960px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-logo-container {
+    max-width: 325px;
+    width: 100%;
+}
+
+.footer-logo {
+    max-width: 220px;
+    width: 100%;
+
+    padding: 18px 40px;
+    padding-bottom: 15px;
+    margin-bottom: 34px;
+
+    background-color: #ee3643;
+    box-shadow: 0 5px 0 0 #b52933;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.technomart-address {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-navigation-container {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
+    margin-top: 39px;
+}
+
+.footer-top-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 550px;
+
+    margin-bottom: 33px;
+}
+
+.footer-bottom-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 525px;
+
+    margin-left: 26px;
+}
+
+.footer-bottom-navigation-link {
+    color: #f5ca7e;
+}
+
 
 
 
