@@ -832,6 +832,87 @@ body {
     color: #f5ca7e;
 }
 
+.footer-bottom-panel {
+    max-width: 960px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 18px;
+
+    margin: 0 auto;
+    padding: 35px 10px 30px 10px;
+}
+
+.footer-copyright {
+    max-width: 230px;
+    width: 100%;
+
+    margin: 0;
+    margin-right: 160px;
+}
+
+.footer-social-container {
+    max-width: 133px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 119px;
+}
+
+.footer-social {
+    width: 41px;
+    height: 41px;
+
+    border-radius: 50%;
+
+    background-color: #212a3a;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-vk {
+    background-image: url(../svg/icon-vk.svg);
+}
+
+.social-fb {
+    background-image: url(../svg/icon-fb.svg);
+}
+
+.social-instagram {
+    background-image: url(../svg/icon-insta.svg);
+}
+
+.footer-autors-container {
+    margin: 0;
+}
+
+.footer-autors {
+    max-width: 300px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 15px;
+}
+
+.footer-autors-info {
+    display: block;
+
+    color: #ffffff;
+}
+
+.footer-autors-link {
+    display: block;
+
+    color: #ffd180;
+}
+
 
 
 
