@@ -160,6 +160,83 @@ body {
     padding-bottom: 13px;
 }
 
+.header-btn-ico {
+    position: relative;
+}
+
+.header-btn-ico::before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+
+    top: 50%;
+    left: 16px;
+
+    transform: translateY(-50%);
+
+    opacity: 0.5;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.top-panel-search::before {
+    background-image: url(../svg/icon-search.svg);
+}
+
+.top-panel-bookmarks::before {
+    background-image: url(../svg/icon-bookmark.svg);
+    background-position: left center;
+}
+
+.top-panel-basket::before {
+    background-image: url(../svg/icon-cart.svg);
+    background-position: left center;
+}
+
+.header-btn-ico:hover {
+    background-color: #212a3a;
+}
+
+.top-panel-logo:hover,
+.top-panel-logo:focus {
+    background-color: #ca2c37;
+}
+
+.top-panel-checkout:hover,
+.top-panel-checkout:focus {
+    background-color: #5fbb2d;
+}
+
+.header-btn-ico:hover::before,
+.header-btn-ico:focus::before {
+    opacity: 1;
+}
+
+.top-panel-bookmarks:active {
+    background-color: #161d29;
+    color: rgba(255,255,255,0.5);
+}
+
+.top-panel-basket:active {
+    background-color: #161d29;
+    color: rgba(255,255,255,0.5);
+}
+
+.top-panel-logo:active {
+    background-color: #ba2732;
+}
+
+.top-panel-checkout:active {
+    background-color: #518534;
+    color: rgba(255,255,255,0.5);
+}
+
+.header-btn-ico:active::before {
+    opacity: 0.5;
+}
+
 /* Middle panel */
 
 .header-middle-panel {
@@ -206,6 +283,8 @@ body {
 }
 
 .panel-contacts-phone {
+    position: relative;
+
     max-width: 270px;
     width: 100%;
 
@@ -218,6 +297,22 @@ body {
     font-weight: 400;
 
     padding: 7px 49px 7px 71px;
+}
+
+.panel-contacts-phone::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 19px;
+
+    top: 50%;
+    left: 13px;
+
+    transform: translateY(-50%);
+
+    opacity: 0.5;
+
+    background: url(../svg/icon-phone.svg) no-repeat center center;
 }
 
 .panel-contacts-location {
@@ -259,15 +354,53 @@ body {
 }
 
 .panel-login-in {
+    position: relative;
+
     max-width: 120px;
     width: 100%;
 
     padding-left: 31px;
 }
 
+.panel-login-in::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 17px;
+
+    top: 50%;
+    left: 14px;
+
+    transform: translateY(-50%);
+
+    opacity: 0.5;
+
+    background: url(../svg/icon-login.svg) no-repeat center center;
+}
+
 .panel-login-reg {
     max-width: 150px;
     width: 100%;
+}
+
+.panel-login-btn:hover {
+    color: #ee3643;
+}
+
+.panel-login-in:hover::before {
+    background: url(../svg/icon-login-blue.svg) no-repeat center center;
+
+    opacity: 1;
+}
+
+.panel-login-btn:active {
+    color: rgba(0,0,0,0.5);
+}
+
+.panel-login-in:active::before {
+    background: url(../svg/icon-login.svg) no-repeat center center;
+
+    opacity: 0.5;
 }
 
 /* Middle-panel-navigation */
@@ -298,6 +431,16 @@ body {
 
 .nav-item-link {
     padding: 20px 30px;
+}
+
+.nav-item-link:hover {
+    background-color: #293449;
+}
+
+.nav-item-link:active {
+    background-color: #1d2739;
+
+    color: rgba(255,255,255,0.5);
 }
 
 /* Main */
@@ -356,22 +499,43 @@ body {
 
 .features-fon-1 {
     background-color: #ffbf47;
+
+    background-image: url(../svg/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 213px center;
+
 }
 
 .features-fon-2 {
     background-color: #3bbce3;
+
+    background-image: url(../svg/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: 197px center;
 }
 
 .features-fon-3 {
     background-color: #dc91d8;
+
+    background-image: url(../svg/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: 191px center;
 }
 
 .features-fon-4 {
     background-color: #8ed78f;
+
+    background-image: url(../svg/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 196px center;
 }
 
 .features-fon-5 {
     background-color: #ffc047;
+
+    background-image: url(../svg/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: 191px center;
 }
 
 .features-title {
