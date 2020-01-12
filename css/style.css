@@ -54,6 +54,14 @@ a {
     padding-bottom: 10px;
 }
 
+.button:hover {
+    background-color: #ca2c37;
+}
+
+.button:active {
+    background-color: #ba2732;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -72,6 +80,27 @@ li {
     width: 100%;
 
     margin: 0 auto;
+}
+
+.visibly {
+    opacity: 1;
+
+    z-index: 10;
+}
+
+.not-visibly {
+    opacity: 0;
+}
+
+.new-item-ico {
+    position: absolute;
+    width: 60px;
+    height: 59px;
+
+    right: 0;
+    top: 0;
+
+    background: url(../img/new-icon.png) no-repeat;
 }
 
 body {
@@ -474,6 +503,8 @@ body {
 }
 
 .features-item {
+    position: relative;
+
     max-width: 300px;
     width: 100%;
 
@@ -563,6 +594,14 @@ body {
     padding: 10px 24px;
 }
 
+.features-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* Popular products */
 
 .popular-products {
@@ -603,6 +642,8 @@ body {
 }
 
 .popular-products-item {
+    position: relative;
+
     max-width: 220px;
     width: 100%;
 
@@ -638,6 +679,10 @@ body {
     margin-bottom: 12px;
 }
 
+.products-item-img {
+    display: block;
+}
+
 .products-item-oldprice {
     font-size: 17px;
     line-height: 18px;
@@ -659,11 +704,127 @@ body {
     font-weight: 700;
     text-align: center;
     color: #ffffff;
-    background-color: #ee3643;
     border-radius: 3px;
+    background: url(../svg/red-button.svg) no-repeat;
 
     padding: 10px 37px;
     margin-bottom: 20px;
+}
+
+.hover-hidden-container {
+    display: none;
+}
+
+.products-item-hover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-hover-btn {
+    display: block;
+
+    border: none;
+    border-radius: 4px;
+
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+
+    cursor: pointer;
+}
+
+.buy-btn {
+    position: relative;
+
+    min-width: 135px;
+    width: 100%;
+
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+
+    background-color: #63a63e;
+    box-shadow: 0 3px 0 0 #367315;
+}
+
+.bookmark-btn {
+    min-width: 135px;
+    width: 100%;
+
+    padding-top: 8px;
+    padding-bottom: 6px;
+
+    color: #32425c;
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+}
+
+.buy-btn::before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+
+    top: 50%;
+    left: 16px;
+
+    transform: translateY(-50%);
+
+    opacity: 0.5;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.buy-btn::before {
+    background-image: url(../svg/icon-cart.svg);
+    background-position: left center;
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
+    background-color: #5fbb2d;
+}
+
+.buy-btn:hover::before,
+.buy-btn:focus::before {
+    opacity: 1;
+}
+
+.buy-btn:active {
+    background-color: #518534;
+}
+
+.buy-btn:active::before {
+    opacity: 1;
+}
+
+.bookmark-btn:hover,
+.bookmark-btn:focus {
+    border-color: #32425c;
+}
+
+.bookmark-btn:active {
+    border-color: rgba(50, 66, 92, 0.5);
+    color: rgba(50, 66, 92, 0.5);
+}
+
+.popular-products-item:hover .products-item-img {
+    display: none;
+}
+
+.popular-products-item:hover .hover-hidden-container {
+    display: block;
+}
+
+.popular-products-item:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
 }
 
 /* Popular-producers */
