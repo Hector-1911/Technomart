@@ -30,6 +30,14 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+body .display-on {
+    display: block;
+}
+
+body .display-off {
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -513,14 +521,128 @@ body {
 }
 
 .features-item-slider {
+    position: relative;
+
     max-width: 620px;
     width: 100%;
     height: 266px;
 
-    padding: 22px 24px;
     margin-bottom: 20px;
 
     background-color: black;
+}
+
+.features-slider-btn {
+    position: absolute;
+    width: 23px;
+    height: 40px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+.slider-btn-left {
+    left: 25px;
+
+    background-image: url(../svg/icon-left.svg);
+}
+
+.slider-btn-right {
+    right: 25px;
+
+    background-image: url(../svg/icon-right.svg);
+}
+
+.slider-paginator-container {
+    position: absolute;
+
+    width: 30px;
+    height: 10px;
+
+    left: 49%;
+    bottom: 38px;
+}
+
+.slider-paginator-container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.slider-red-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background-color: #ee3643;
+}
+
+.features-slider-1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 24px 24px;
+
+    background: url('../img/features-slider-img-1.jpg') no-repeat center center;
+}
+
+.features-slider-2 {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 24px 24px;
+
+    background: url('../img/features-slider-img-2.jpg') no-repeat center center;
+}
+
+.features-slider-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.features-slider-info {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.features-slider-button {
+    width: 195px;
+
+    margin-top: auto;
 }
 
 .features-item-container {
@@ -580,6 +702,9 @@ body {
 }
 
 .features-button {
+    max-width: 135px;
+    width: 100%;
+
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -591,7 +716,7 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 
-    padding: 10px 24px;
+    padding: 10px 0;
 }
 
 .features-button:hover {
@@ -915,7 +1040,7 @@ body {
     max-width: 960px;
     width: 100%;
 
-    padding: 65px 10px 100px 10px;
+    padding: 65px 10px 0 10px;
     margin: 0 auto;
 }
 
@@ -947,8 +1072,24 @@ body {
 }
 
 .services-slider-menu {
+    position: relative;
+
     max-width: 240px;
     width: 100%;
+}
+
+.services-slider-menu::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: -42px;
+
+    width: 10px;
+    height: 272px;
+
+    background: url('../img/shadow-line.png') no-repeat;
 }
 
 .services-slider-item {
@@ -967,7 +1108,32 @@ body {
 }
 
 .services-slider-content-container {
+    width: 100%;
+    height: 284px;
+
     margin-left: 80px;
+}
+
+.services-slider-content {
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+}
+
+.services-slider-delivery {
+    background-image: url('../img/services-delivery.png');
+    background-position: right 23px;
+}
+
+.services-slider-guarantee {
+    background-image: url('../img/services-guarantee.png');
+    background-position: right top;
+}
+
+.services-slider-credit {
+    background-image: url('../img/services-credit.png');
+    background-position: right top;
 }
 
 .services-slider-title {
@@ -991,6 +1157,20 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
+}
+
+.services-slider-description-guarantee {
+    max-width: 380px;
+    width: 100%;
+}
+
+.services-slider-credit-btn {
+    max-width: 195px;
+    width: 100%;
+
+    background-color: #ff5357;
+
+    margin-top: 28px;
 }
 
 /* About-US */
