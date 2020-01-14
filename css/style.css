@@ -170,6 +170,15 @@ body {
 
     padding-left: 49px;
     padding-right: 20px;
+
+    font: inherit;
+    color: #ffffff;
+    background-color: #293449;
+    background-image: url(../svg/icon-search-opacity.svg);
+    background-repeat: no-repeat;
+    background-position: 17px 13px;
+    border: none;
+    outline: none;
 }
 
 .menu-item-search {
@@ -216,10 +225,6 @@ body {
 
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-.top-panel-search::before {
-    background-image: url(../svg/icon-search.svg);
 }
 
 .top-panel-bookmarks::before {
@@ -272,6 +277,17 @@ body {
 
 .header-btn-ico:active::before {
     opacity: 0.5;
+}
+
+.top-panel-search:hover {
+    background-color: #212a3a;
+    background-image: url(../svg/icon-search.svg);
+}
+
+.top-panel-search:focus {
+    background-color: #ffffff;
+    color: #000000;
+    background-image: url(../svg/icon-search-red.svg);
 }
 
 /* Middle panel */
@@ -1460,6 +1476,12 @@ body {
     color: #ee3643;
     text-decoration: none;
 }
+
+/* Popup */
+
+
+
+/* JS-Style */
 
 
 
