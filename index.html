@@ -423,7 +423,30 @@
             </div>
         </div>
     </footer>
-
+    <div class="modal modal-login">
+        <form action="" class="modal-form" method="post">
+            <div class="modal-form-container">
+                <div class="user-info-container">
+                    <p class="user-info">
+                        <label class="form-label" for="user-name">Ваше имя:</label>
+                        <input class="form-input" type="text" name="name" placeholder="Представьтесь, пожалуйста" id="user-name">
+                    </p>
+                    <p class="user-info">
+                        <label class="form-label" for="user-mail">Ваш e-mail:</label>
+                        <input class="form-input" type="text" name="mail" placeholder="Для отправки ответа" id="user-mail">
+                    </p>
+                </div>
+                <p class="user-letter-container">
+                    <label class="form-label" for="user-latter">Текст письма:</label>
+                    <textarea class="user-letter form-input" name="latter" placeholder="В свободной форме" id="user-latter"></textarea>
+                </p>
+            </div>
+            <div class="submit-btn-container">
+                <button class="button submit-btn" type="submit">ОТПРАВИТЬ</button>
+            </div>
+        </form>
+        <button class="modal-close-btn"></button>
+    </div>
 
 
 </body>
