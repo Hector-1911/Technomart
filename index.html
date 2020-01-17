@@ -25,10 +25,10 @@
                 </ul>
                 <ul class="top-panel-menu">
                     <li>
-                        <a class="top-panel-link top-panel-bookmarks header-btn-ico" href="#">Закладки: 0</a>
+                        <a class="top-panel-link top-panel-bookmarks header-btn-ico" href="#">Закладки: <output class="bookmark-counter">0</output></a>
                     </li>
                     <li>
-                        <a class="top-panel-link top-panel-basket header-btn-ico" href="#">Корзина: 0</a>
+                        <a class="top-panel-link top-panel-basket header-btn-ico" href="#">Корзина: <output class="basket-counter">0</output></a>
                     </li>
                     <li>
                         <a class="top-panel-link top-panel-checkout" href="#">Оформить заказ</a>
@@ -139,12 +139,12 @@
                     </li>
                 </ul>
             </section>
-            <div class="popular-products-container">
+            <div class="popular-products-container" id="tablex">
                 <section class="popular-products">
                     <h2 class="popular-products-title">Популярные товары:</h2>
                     <a href="" class="popular-products-btn button">все поПулярные товары</a>
                 </section>
-                <ul class="popular-products-menu">
+                <ul class="popular-products-menu" id="table">
                     <li class="popular-products-item">
                         <div class="new-item-ico not-visibly"></div>
                         <div class="products-item-container">
@@ -153,8 +153,8 @@
                                 <div class="hover-hidden-container">
                                     <div class="products-item-hover-container">
                                         <div class="products-hover-btn-container">
-                                            <button class="products-hover-btn buy-btn">КУПИТЬ</button>
-                                            <button class="products-hover-btn bookmark-btn">В закладки</button>
+                                            <button class="products-hover-btn buy-btn" id="basket-btn">КУПИТЬ</button>
+                                            <button class="products-hover-btn bookmark-btn" id="bookmark-btn">В закладки</button>
                                         </div>
                                     </div>
                                 </div>
@@ -172,8 +172,8 @@
                                 <div class="hover-hidden-container">
                                     <div class="products-item-hover-container">
                                         <div class="products-hover-btn-container">
-                                            <button class="products-hover-btn buy-btn">КУПИТЬ</button>
-                                            <button class="products-hover-btn bookmark-btn">В закладки</button>
+                                            <button class="products-hover-btn buy-btn" id="basket-btn">КУПИТЬ</button>
+                                            <button class="products-hover-btn bookmark-btn" id="bookmark-btn">В закладки</button>
                                         </div>
                                     </div>
                                 </div>
@@ -191,8 +191,8 @@
                                 <div class="hover-hidden-container">
                                     <div class="products-item-hover-container">
                                         <div class="products-hover-btn-container">
-                                            <button class="products-hover-btn buy-btn">КУПИТЬ</button>
-                                            <button class="products-hover-btn bookmark-btn">В закладки</button>
+                                            <button class="products-hover-btn buy-btn" id="basket-btn">КУПИТЬ</button>
+                                            <button class="products-hover-btn bookmark-btn" id="bookmark-btn">В закладки</button>
                                         </div>
                                     </div>
                                 </div>
@@ -210,8 +210,8 @@
                                 <div class="hover-hidden-container">
                                     <div class="products-item-hover-container">
                                         <div class="products-hover-btn-container">
-                                            <button class="products-hover-btn buy-btn">КУПИТЬ</button>
-                                            <button class="products-hover-btn bookmark-btn">В закладки</button>
+                                            <button class="products-hover-btn buy-btn" id="basket-btn">КУПИТЬ</button>
+                                            <button class="products-hover-btn bookmark-btn" id="bookmark-btn">В закладки</button>
                                         </div>
                                     </div>
                                 </div>
@@ -461,7 +461,7 @@
         </div>
         <button class="modal-close-btn"></button>
     </div>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
