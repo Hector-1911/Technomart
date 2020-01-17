@@ -51,12 +51,15 @@ a {
 .button {
     color: #ffffff;
     background-color: #ee3643;
+
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
+
     border-radius: 4px;
+    border: none;
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1264,6 +1267,8 @@ body {
 .about-us-map {
     margin-top: 32px;
     margin-bottom: 35px;
+
+    cursor: pointer;
 }
 
 .about-us-contacts-button {
@@ -1484,8 +1489,6 @@ body {
 .modal {
     position: fixed;
 
-    display: none;
-
     left: 50%;
     top: 50%;
 
@@ -1495,6 +1498,8 @@ body {
 }
 
 .modal-login {
+    display: none;
+
     width: 620px;
     height: 430px;
 
@@ -1610,7 +1615,105 @@ body {
     border: none;
 }
 
+.form-input:hover {
+    border-color: rgba(0,0,0,0.3);
+}
+
+.form-input:focus {
+    border-color: #ee3643;
+    outline: none;
+}
+
+.modal-map {
+    display: none;
+
+    width: 940px;
+    height: 446px;
+
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+
+    background: url('../img/modal-map.jpg') no-repeat center center;
+}
+
+.mobal-buy {
+    display: none;
+
+    width: 620px;
+    height: 282px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.6);
+}
+
+.mobal-buy::before {
+    content: "";
+    position: absolute;
+
+    width: 620px;
+    height: 7px;
+
+    left: 0;
+    top: 0;
+
+    background-color: #ff5257;
+}
+
+.mobal-buy-title-container {
+    width: 100%;
+
+    padding-top: 72px;
+    padding-bottom: 68px;
+
+    background: url('../svg/form-1.svg') no-repeat 81px center;
+}
+
+.mobal-buy-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+
+    vertical-align: middle;
+
+    margin-left: 179px;
+}
+
+.mobal-buy-btn-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 37px 80px;
+
+    background-color: #f1f1f1;
+}
+
+.checkout-btn {
+    width: 220px;
+}
+
+.continue-btn {
+    width: 220px;
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.continue-btn:hover,
+.continue-btn:focus {
+    color: #ffffff;
+    background-color: #5fbb2d;
+}
+
+.continue-btn:active {
+    background-color: #518534;
+}
+
 /* JS-Style */
+
+.modal-show {
+    display: block;
+}
 
 
 
