@@ -1114,18 +1114,31 @@ body {
 }
 
 .services-slider-item {
+    width: 100%;
+
     padding: 15px 22px;
 
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;
+    text-align: left;
     color: #ffffff;
     background-color: #32425c;
+
+    border: none;
     border-bottom: 2px solid rgba(255,255,255,0.1);
+    outline: none;
 }
 
 .services-slider-item:hover {
     background-color: #293449;
+    color: #ffffff;
+}
+
+.services-slider-item:active,
+.services-slider-item:focus {
+    background-color: #ffffff;
+    color: #293449;
 }
 
 .services-slider-content-container {
