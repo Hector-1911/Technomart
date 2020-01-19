@@ -1065,6 +1065,10 @@ body {
     margin: 0 auto;
 }
 
+.services-info {
+    margin-bottom: 60px;
+}
+
 .services-title {
     font-size: 30px;
     line-height: 30px;
@@ -1083,37 +1087,36 @@ body {
     color: #000000;
 
     margin: 0;
-    margin-bottom: 60px;
 }
 
 .services-content {
-    display: flex;
-
-    width: 100%;
+    position: relative;
+    margin-bottom: 54px;
+    padding-bottom: 102px;
 }
 
 .services-slider-menu {
-    position: relative;
-
     max-width: 240px;
     width: 100%;
 }
 
-.services-slider-menu::after {
+.services-content::after {
     content: "";
 
     position: absolute;
 
-    right: 0;
-    top: -42px;
+    height: 270px;
+    width: 20px;
 
-    width: 10px;
-    height: 272px;
+    left: 230px;
+    top: -45px;
 
     background: url('../img/shadow-line.png') no-repeat;
 }
 
-.services-slider-item {
+.services-slider-menu label {
+    display: block;
+
     width: 100%;
 
     padding: 15px 22px;
@@ -1125,9 +1128,18 @@ body {
     color: #ffffff;
     background-color: #32425c;
 
-    border: none;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
-    outline: none;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+
+    cursor: pointer;
+}
+
+.services-slider-menu input[type="radio"] {
+    display: none;
+
+    position: absolute;
+
+    opacity: 0;
 }
 
 .services-slider-item:hover {
@@ -1135,39 +1147,41 @@ body {
     color: #ffffff;
 }
 
-.services-slider-item:active,
-.services-slider-item:focus {
+#button-1:checked ~ label[for="button-1"],
+#button-2:checked ~ label[for="button-2"],
+#button-3:checked ~ label[for="button-3"] {
     background-color: #ffffff;
     color: #293449;
+
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
-.services-slider-content-container {
-    width: 100%;
-    height: 284px;
-
-    margin-left: 80px;
+#button-1:checked ~ .services-slider-content-container .services-slider-delivery,
+#button-2:checked ~ .services-slider-content-container .services-slider-guarantee,
+#button-3:checked ~ .services-slider-content-container .services-slider-credit {
+    display: block;
 }
 
 .services-slider-content {
-    width: 100%;
-    height: 100%;
-
-    background-repeat: no-repeat;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 620px;
+    padding-bottom: 139px;
 }
 
 .services-slider-delivery {
-    background-image: url('../img/services-delivery.png');
-    background-position: right 23px;
+    background: url('../img/services-delivery.png') no-repeat 100% 21px;
 }
 
 .services-slider-guarantee {
-    background-image: url('../img/services-guarantee.png');
-    background-position: right top;
+    background: url('../img/services-guarantee.png') no-repeat 100% 0%;
 }
 
 .services-slider-credit {
-    background-image: url('../img/services-credit.png');
-    background-position: right top;
+    background: url('../img/services-credit.png') no-repeat 100% 0%;
 }
 
 .services-slider-title {
@@ -1224,7 +1238,7 @@ body {
     justify-content: space-between;
 
     margin: 0 auto;
-    padding: 80px 10px 85px 10px;
+    padding: 25px 10px 85px 10px;
 }
 
 .about-us-info {
