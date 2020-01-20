@@ -79,6 +79,68 @@ closeMap.addEventListener("click", function(evt) {
     popupMap.classList.remove('modal-show');
 });
 
+var sliderOne = document.querySelector('.features-slider-1-container');
+var sliderTwo = document.querySelector('.features-slider-2-container');
+var buttonLeft = document.querySelector('.slider-btn-left');
+var buttonRight = document.querySelector('.slider-btn-right');
+var redDotLeft = document.querySelector('.red-dot-1');
+var redDotRight = document.querySelector('.red-dot-2');
+var dotLeft = document.querySelector('.slider-paginator-1');
+var dotRight = document.querySelector('.slider-paginator-2');
+
+buttonLeft.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    sliderTwo.classList.remove('display-on');
+    sliderTwo.classList.add('display-off');
+    sliderOne.classList.add('display-on');
+    sliderOne.classList.remove('display-off');
+
+    redDotRight.classList.remove('display-on');
+    redDotRight.classList.add('display-off');
+    redDotLeft.classList.add('display-on');
+    redDotLeft.classList.remove('display-off');
+});
+
+buttonRight.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    sliderOne.classList.remove('display-on');
+    sliderOne.classList.add('display-off');
+    sliderTwo.classList.add('display-on');
+    sliderTwo.classList.remove('display-off');
+
+    redDotLeft.classList.remove('display-on');
+    redDotLeft.classList.add('display-off');
+    redDotRight.classList.add('display-on');
+    redDotRight.classList.remove('display-off');
+});
+
+dotLeft.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    sliderTwo.classList.remove('display-on');
+    sliderTwo.classList.add('display-off');
+    sliderOne.classList.add('display-on');
+    sliderOne.classList.remove('display-off');
+
+    redDotRight.classList.remove('display-on');
+    redDotRight.classList.add('display-off');
+    redDotLeft.classList.add('display-on');
+    redDotLeft.classList.remove('display-off');
+});
+
+dotRight.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    sliderOne.classList.remove('display-on');
+    sliderOne.classList.add('display-off');
+    sliderTwo.classList.add('display-on');
+    sliderTwo.classList.remove('display-off');
+
+    redDotLeft.classList.remove('display-on');
+    redDotLeft.classList.add('display-off');
+    redDotRight.classList.add('display-on');
+    redDotRight.classList.remove('display-off');
+});
+
+
 
 
 

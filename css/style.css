@@ -89,7 +89,7 @@ li {
 }
 
 .container {
-    max-width: 1200px;
+/*  max-width: 1200px; */
     width: 100%;
 
     margin: 0 auto;
@@ -571,6 +571,8 @@ body {
     cursor: pointer;
 
     padding: 0;
+
+    outline: none;
 }
 
 .slider-btn-left {
@@ -610,6 +612,8 @@ body {
 
     border-radius: 50%;
     background-color: #ffffff;
+
+    cursor: pointer;
 }
 
 .slider-red-dot {
@@ -618,6 +622,10 @@ body {
 
     border-radius: 50%;
     background-color: #ee3643;
+}
+
+.features-slider-container {
+    height: 100%;
 }
 
 .features-slider-1 {
@@ -1357,6 +1365,15 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    background-color: #ca2c37;
+}
+
+.footer-logo:active {
+    background-color: #ba2732;
 }
 
 .technomart-address {
