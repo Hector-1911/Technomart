@@ -1765,10 +1765,14 @@ body {
 .catalog-page .main-content {
     padding-top: 23px;
     padding-bottom: 60px;
+
+    color: #000000;
 }
 
 .bread-crumbs {
     display: flex;
+
+    margin-bottom: 24px;
 }
 
 .bread-crumbs-item {
@@ -1804,6 +1808,226 @@ body {
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.catalog-title-container {
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 20px;
+
+    background-color: #f2f6f8;
+}
+
+.catalog-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-fon {
+    background-color: #f7f3ec;
+    border-radius: 4px;
+}
+
+.catalog-filter-container {
+    max-width: 220px;
+    width: 100%;
+
+    font-family: 'PTSans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.catalog-goods-container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.catalog-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-filter-container {
+    padding: 11px 19px 9px 19px;
+    margin-bottom: 13px;
+}
+
+.form-filter {
+    vertical-align: middle;
+}
+
+.catalog-filter fieldset {
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-filter fieldset:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.catalog-filter fieldset:last-of-type {
+    margin-bottom: 60px;
+}
+
+.catalog-filter fieldset:not(:last-of-type) {
+    margin-bottom: 13px;
+}
+
+.catalog-filter legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+.price-range-container {
+    padding: 30px 20px;
+
+    margin-bottom: 9px;
+}
+
+.price-range-container input {
+    width: 100%;
+
+    vertical-align: middle;
+}
+
+.price-counter-container {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.price-counter-container::after {
+    content: "";
+
+    position: absolute;
+
+    width: 9px;
+    height: 1px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #000;
+}
+
+.price-counter {
+    width: 95px;
+
+    padding: 10px 0 9px 0;
+
+    text-align: center;
+}
+
+.price-counter span {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.filter-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item {
+    margin-bottom: 20px;
+}
+
+.filter-menu input {
+    display: none;
+}
+
+.filter-menu label {
+    position: relative;
+
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    padding-left: 35px;
+
+    cursor: pointer;
+}
+
+.filter-menu label::before {
+    content: "";
+
+    position: absolute;
+
+    width: 27px;
+    height: 25px;
+
+    left: 0;
+    top: -4px;
+
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    opacity: 0.8;
+}
+
+.manufacturer-group label::before {
+    background-image: url('../svg/checkbox-off.svg');
+}
+
+.manufacturer-group input:checked + label::before {
+    background-image: url('../svg/checkbox-on.svg');
+}
+
+.typeofdrill-group label::before {
+    background-image: url('../svg/radio-off.svg');
+}
+
+.typeofdrill-group input:checked + label::before {
+    background-image: url('../svg/radio-on.svg');
+}
+
+.filter-menu input:hover + label::before {
+    opacity: 1;
+}
+
+.filter-menu input:disabled + label::before {
+    opacity: 0.4;
+}
+
+.filter-btn {
+    width: 140px;
+
+    font: inherit;
+
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+
+    background-color: #fff;
+
+    padding: 9px 0;
 }
 
 

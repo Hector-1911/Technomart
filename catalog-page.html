@@ -99,6 +99,72 @@
                     <a class="crumbs-item-link">Перфораторы</a>
                 </li>
             </ul>
+            <section class="catalog-title-container">
+                <h3 class="catalog-title">ПЕРФОРАТОРЫ</h3>
+            </section>
+            <div class="catalog-container">
+                <div class="catalog-filter-container">
+                    <form action="" class="catalog-filter" method="post">
+                        <div class="form-filter-container filter-fon">
+                            <span class="form-filter">ФИЛЬТР:</span>
+                        </div>
+                        <fieldset>
+                            <legend>ЦЕНА:</legend>
+                            <div class="price-range-container filter-fon">
+                                <input type="range">
+                            </div>
+                            <div class="price-counter-container">
+                                <div class="price-counter filter-fon">
+                                    <span>0</span>
+                                </div>
+                                <div class="price-counter filter-fon">
+                                    <span>30000</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="manufacturer-group">
+                            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                            <ul class="filter-menu">
+                                <li class="filter-item">
+                                    <input type="checkbox" name="bosch" id="bosch-id" checked>
+                                    <label for="bosch-id">BOSCH</label>
+                                </li>
+                                <li class="filter-item">
+                                    <input type="checkbox" name="interskol" id="interskol-id">
+                                    <label for="interskol-id">ИНТЕРСКОЛ</label>
+                                </li>
+                                <li class="filter-item">
+                                    <input type="checkbox" name="makita" id="makita-id" checked>
+                                    <label for="makita-id">MAKIta</label>
+                                </li>
+                                <li class="filter-item">
+                                    <input type="checkbox" name="dewalt" id="dewalt-id">
+                                    <label for="dewalt-id">Dewalt</label>
+                                </li>
+                                <li class="filter-item">
+                                    <input type="checkbox" name="hitachi" id="hitachi-id">
+                                    <label for="hitachi-id">Hitachi</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="typeofdrill-group">
+                            <legend>ПИТАНИЕ:</legend>
+                            <ul class="filter-menu">
+                                <li class="filter-item">
+                                    <input type="radio" name="drill" id="battery-id" checked>
+                                    <label for="battery-id">Аккумуляторные</label>
+                                </li>
+                                <li class="filter-item">
+                                    <input type="radio" name="drill" id="network-id">
+                                    <label for="network-id">Сетевые</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button class="filter-btn" type="submit">ПОКАЗАТЬ</button>
+                    </form>
+                </div>
+                <div class="catalog-goods-container"></div>
+            </div>
         </div>
     </main>
     <footer class="main-footer container">
