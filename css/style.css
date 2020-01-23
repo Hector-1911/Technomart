@@ -1168,6 +1168,10 @@ body {
     display: block;
 }
 
+.services-slider-menu label:hover {
+    background-color: #293449;
+}
+
 .services-slider-content {
     position: absolute;
     display: none;
@@ -2029,6 +2033,75 @@ body {
 
     padding: 9px 0;
 }
+
+.catalog-goods-container {
+    font-family: 'PTSans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.sorting-container {
+    display: flex;
+
+    padding: 11px 19px 8px 19px;
+    margin-bottom: 13px;
+
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.sorting-title {
+    font-weight: 400;
+    vertical-align: middle;
+
+    padding-right: 138px;
+}
+
+.sorting-menu {
+    display: flex;
+}
+
+.sorting-item + .sorting-item {
+    margin-left: 65px;
+}
+
+.sorting-btn {
+    color: rgba(0,0,0,0.3);
+
+    border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-up-down {
+    display: flex;
+
+    margin-left: auto;
+}
+
+.up-down-btn + .up-down-btn {
+    margin-left: 18px;
+}
+
+.sorting-btn:hover {
+    color: rgba(0,0,0,1);
+
+    border-bottom: 1px solid #ee3643;
+}
+
+.up-down-btn:hover path {
+    fill: rgba(0,0,0,1);
+}
+
+.catalog-goods-container .btn-active {
+    color: #ee3643;
+
+    border: none;
+}
+
+.catalog-goods-container .btn-active path {
+    fill: #ee3643;
+}
+
+
+
 
 
 
