@@ -787,6 +787,7 @@ body {
 .popular-products-menu {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: 700;
@@ -2032,6 +2033,18 @@ body {
     background-color: #fff;
 
     padding: 9px 0;
+
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    border: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+}
+
+.filter-btn:active {
+    border-color: #ee3643;
 }
 
 .catalog-goods-container {
@@ -2043,7 +2056,7 @@ body {
     display: flex;
 
     padding: 11px 19px 8px 19px;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
 
     font-size: 13px;
     line-height: 18px;
@@ -2100,7 +2113,86 @@ body {
     fill: #ee3643;
 }
 
+.catalog-page .popular-products-menu {
+    margin-bottom: 32px;
+}
 
+.catalog-page .popular-products-item {
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+.catalog-paginator {
+    display: flex;
+
+    line-height: 18px;
+}
+
+.paginator-item + .paginator-item {
+    margin-left: 10px;
+}
+
+.paginator-link {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    vertical-align: middle;
+    text-align: center;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+
+    padding: 9px 15px;
+}
+
+.current-paginator {
+    border: 1px solid #ee3643;
+    background-color: #ee3643;
+    color: #fff;
+}
+
+.next-paginator {
+    width: 140px;
+}
+
+.paginator-link:hover {
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.paginator-link:active {
+    border-color: #ee3643;
+}
+
+.about-drill {
+    width: 100%;
+    background-color: #f2f6f8;
+}
+
+.about-drill-container {
+    max-width: 960px;
+    width: 100%;
+    padding: 65px 10px;
+    margin: 0 auto;
+
+    color: #000;
+}
+
+.about-drill-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+.about-drill-description {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+
+    margin: 0;
+}
 
 
 
