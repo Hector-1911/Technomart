@@ -307,7 +307,7 @@ body {
     max-width: 960px;
     width: 100%;
 
-    padding: 45px 10px 40px 10px;
+    padding: 43px 10px 40px 10px;
     margin: 0 auto;
 
     display: flex;
@@ -334,13 +334,12 @@ body {
     max-width: 300px;
     width: 100%;
 
-    padding-right: 30px;
+    padding-right: 23px;
 }
 
 .panel-contacts-phone {
     position: relative;
 
-    max-width: 270px;
     width: 100%;
 
     display: block;
@@ -383,14 +382,16 @@ body {
     margin-top: 5px;
 }
 
-.middle-panel-login {
+.middle-panel-login-container {
     max-width: 300px;
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
+    padding-left: 11px;
+}
 
-    padding-left: 18px;
+.middle-panel-login {
+    padding-bottom: 30px;
+    padding-left: 10px;
 }
 
 .panel-login-btn {
@@ -415,6 +416,7 @@ body {
     width: 100%;
 
     padding-left: 31px;
+    margin-right: 3px;
 }
 
 .panel-login-in::before {
@@ -423,10 +425,8 @@ body {
     width: 20px;
     height: 17px;
 
-    top: 50%;
+    top: 13px;
     left: 14px;
-
-    transform: translateY(-50%);
 
     opacity: 0.5;
 
@@ -456,6 +456,117 @@ body {
     background: url(../svg/icon-login.svg) no-repeat center center;
 
     opacity: 0.5;
+}
+
+.user-page {
+    display: flex;
+
+    position: relative;
+
+    padding: 12px 47px;
+
+    font-size: 21px;
+    line-height: 21px;
+
+    color: #000;
+    background-color: #fff;
+}
+
+.user-ico {
+    position: absolute;
+
+    width: 20px;
+    height: 18px;
+
+    left: 13px;
+    top: 13px;
+
+    background: url('../svg/icon-user.svg') no-repeat center center;
+
+    cursor: pointer;
+}
+
+.user-exit {
+    position: absolute;
+
+    width: 21px;
+    height: 17px;
+
+    right: 10px;
+    top: 14px;
+
+    background: url('../svg/icon-logout.svg') no-repeat center center;
+
+    cursor: pointer;
+}
+
+.user-exit:hover {
+    background: url(../svg/icon-logout-blue.svg) no-repeat center center;
+}
+
+.user-ico:hover {
+    background: url(../svg/icon-user-blue.svg) no-repeat center center;
+}
+
+.user-exit:active {
+    background: url(../svg/icon-logout.svg) no-repeat center center;
+
+    opacity: 0.5;
+}
+
+.user-ico:active {
+    background: url(../svg/icon-user.svg) no-repeat center center;
+
+    opacity: 0.5;
+}
+
+.user-page-info {
+    margin-left: 18px;
+}
+
+.user-page-info a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #32425c;
+
+    border-bottom: 1px solid #32425c;
+}
+
+.user-page-info a:hover {
+    color: #ee3643;
+
+    border-bottom: 1px solid #ee3643;
+}
+
+.user-page-info a:active {
+    color: rgba(0,0,0,0.3);
+
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.my-orders {
+    position: relative;
+
+    margin-right: 33px;
+}
+
+.my-orders::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    right: -23px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    background-color: #32425c;
 }
 
 /* Middle-panel-navigation */
@@ -2080,7 +2191,7 @@ body {
 .sorting-btn {
     color: rgba(0,0,0,0.3);
 
-    border-bottom: 1px dotted #ee3643;
+    border-bottom: 1px dashed #ee3643;
 }
 
 .sorting-up-down {
