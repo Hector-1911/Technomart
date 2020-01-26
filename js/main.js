@@ -2,9 +2,6 @@ var bookmarkCounter = document.querySelector(".bookmark-counter");
 var basketCounter = document.querySelector(".basket-counter");
 var bookmarkCell = document.querySelector(".top-panel-bookmarks");
 var basketCell = document.querySelector(".top-panel-basket");
-var popupBuy = document.querySelector('.mobal-buy');
-var closeBuy = popupBuy.querySelector('.modal-close-btn');
-var continueBuy = popupBuy.querySelector('.continue-btn');
 
 let productMenu = document.getElementById('table');
 let productMenux = document.getElementById('tablex');
@@ -40,16 +37,6 @@ function highhard(nobe) {
     basketCounter.value = (basketCounter.value - 1) + 2;
     popupBuy.classList.add('modal-show');
 };
-
-closeBuy.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popupBuy.classList.remove('modal-show');
-});
-
-continueBuy.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popupBuy.classList.remove('modal-show');
-});
 
 var popupLogin = document.querySelector('.modal-login');
 var closeLogin = popupLogin.querySelector('.modal-close-btn');
@@ -140,12 +127,13 @@ dotRight.addEventListener("click", function(evt) {
     redDotRight.classList.remove('display-off');
 });
 
+
 var loginInButton = document.querySelector('.panel-login-in');
 var loginOutButton = document.querySelector('.user-exit');
 var userLogin = document.querySelector('.middle-panel-login');
 var userInfo = document.querySelector('.middle-panel-login-area');
 
-loginInButton.addEventListener("click", function(evt) {
+loginInButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     userLogin.classList.remove('display-on');
     userLogin.classList.add('display-off');
@@ -153,13 +141,15 @@ loginInButton.addEventListener("click", function(evt) {
     userInfo.classList.remove('display-off');
 });
 
-loginOutButton.addEventListener("click", function(evt) {
+loginOutButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     userInfo.classList.remove('display-on');
     userInfo.classList.add('display-off');
     userLogin.classList.add('display-on');
     userLogin.classList.remove('display-off');
 });
+
+
 
 
 
